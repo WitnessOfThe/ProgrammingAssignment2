@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This functions works with respect to the assigment
 
-## Write a short comment describing this function
+## This function create "matrix" object which is actually list of functions. 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,10 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function evaluate inverse matrix ONLY of matrix created by makeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
   m <- x$getinv()
   if(!is.null(m)) {
     message("getting cached data")
